@@ -1,0 +1,68 @@
+<ion-popover-view class="fondoPopover">
+    <ion-content>
+      <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox" ng-click="vibrate()">
+          </label>
+          <div class="item-content">
+              Vibración
+          </div>
+      </li>
+      <h1 class="titpopover">Temas</h1>
+     <hr>
+      <div class="list">
+        <li class="item item-checkbox">
+            <label class="checkbox">
+                <input type="checkbox" ng-click="setTema('fondo0')" name="group">
+            </label>
+            <div class="item-content"> 
+                Flora
+            </div>
+        </li>
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox" ng-click="setTema('fondo1')" name="group">
+          </label>
+          <div class="item-content">
+              Atardecer
+          </div>
+        </li>
+        <li class="item item-checkbox">
+          <label class="checkbox">
+            <input type="checkbox" ng-click="setTema('fondo2')" name="group">
+          </label>
+            <div class="item-content">
+              Cielo
+            </div>
+        </li>
+      </div>
+      <div class="list">
+  		  <h1 class="titpopover">Sonido</h1>
+        <hr>
+        <li class="item item-checkbox">
+          <label class="checkbox">
+    	       <input type="checkbox" ng-click="play('/android_asset/www/alarmas/tono1.mp3')" name="group2">
+          </label>
+    	       <div class="item-content">
+      		      Tono 1
+      	     </div>
+        </li>
+        <li class="item item-checkbox">
+  		     <label class="checkbox">
+    	       <input type="checkbox" ng-click="play('/android_asset/www/alarmas/tono1.mp3')" name="group2">
+          </label>
+    	    <div class="item-content">
+      		  Tono 2
+    	    </div>
+        </li>
+        <li class="item item-radio">
+          <label class="item item-radio">
+              <input ng-click="openModal()" type="checkbox" name="group4">
+              <div class="item-content">
+                Set Hour
+              </div>
+          </label>
+        </li>
+	    </div>
+    </ion-content>
+</ion-popover-view>

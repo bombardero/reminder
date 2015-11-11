@@ -1,0 +1,16 @@
+<ion-view ng-style="{ 'background-image': 'url(' + tema.miTema + ')', 
+                      '-webkit-background-size': 'cover',
+                      '-o-background-size': 'cover',
+                      'background-size': 'cover',
+                      'background-size': '100% 100%'
+                    }">
+    <ion-nav-title>
+        {{datos.getDate()() | date: 'EEEE, d MMMM, y'}}
+        <a class='item-icon-right'>
+            <i  ng-controller='CtrlSetting' ng-click='openPopover($event)' class='icon ion-gear-a'></i>
+        </a>
+    </ion-nav-title>    
+    <ion-content>
+       
+    </ion-content>
+</ion-view>

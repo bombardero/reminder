@@ -1,0 +1,33 @@
+<ion-view ng-style="{ 'background-image': 'url(' + tema.miTema + ')', 
+                      '-webkit-background-size': 'cover',
+                      '-o-background-size': 'cover',
+                      'background-size': 'cover',
+                      'background-size': '100% 100%'
+                    }">
+  <ion-nav-title>
+    {{datos.getDate()() | date: 'EEEE, d MMMM, y'}}
+        <a class='item-icon-right'>
+            <i ng-controller='CtrlSetting' ng-click='openPopover($event)' class='icon ion-gear-a'></i>
+        </a>
+    </ion-nav-title>
+    <ion-content>
+        <button ng-click="openModal()">abrir modal</button>
+    </ion-content>
+</ion-view>
+
+<script id="modal-posponer.html" type="text/ng-template">
+ <ion-modal-view>
+  <ion-content id="posponer">
+    <h2 class="menu-posponer" ><a ng-href ng-click="closeModal()">X <br/>Cancelar</a></h2>
+    <div class="control-posponer">        
+          <h3 class="title-posponer">REMINDER</h3><br/><br/><br/>
+                <div id="reproducir">
+                  <img src="img/reproducir.png">
+                </div>
+                <div id="postergar">
+                  <img src="img/postergar.png">
+                </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
+</script>

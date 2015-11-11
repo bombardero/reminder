@@ -1,0 +1,340 @@
+/* Empty. Add your own CSS if you like */
+/*Fondo de la actividad*/
+
+@font-face {
+font-family:'fontgodoy';
+src: url(../font/avenir.ttf) format("truetype");
+ 	font-weight: normal;
+    font-style: normal;
+}
+
+div {
+    font-family: 'fontgodoy';
+} 
+
+.fondo1{
+	background: url(../img/naranja.png)no-repeat; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-size: 100% 100%;
+	filter: blur(6px);
+}
+.fondo2{
+	background: url(../img/azul.png)no-repeat; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-size: 100% 100%;
+}
+
+.fondoPopover{
+	background: url(../img/bPopover.png)no-repeat; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-size: 100% 100%;
+}
+
+.view-container{
+  	background: url(../img/verde.png)no-repeat; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-size: 100% 100%;
+}	
+
+.item {
+	border: 0px; 
+	background-color: transparent;
+}
+.item>a{
+	background-color:#000;
+	opacity: 0.77%;
+	color: #FFF;
+	margin-left:20%;
+	border-top: 1%;
+	border-bottom: 1%;
+	border-left: 1%;
+	border-right: 1%;
+	-webkit-box-shadow: -2px 1px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 1px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px 1px 28px 0px rgba(0,0,0,0.75);
+}
+
+a.item:hover, a.item:focus {
+  color: #000;
+}
+
+.tabs{	
+	background: #000;
+	border-top: #000;
+	border-left: #000;
+	border-right:#000;
+	border-bottom: #000;
+}
+
+.bar.bar-stable{
+	background: transparent;
+}
+
+.tab-nav{
+	background: transparent;
+}
+
+.tab-nav,.tabs{
+	margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.bar.bar-stable .title {																															 
+	color: #FFF;
+	border-bottom: 1px solid #FFF;
+	margin-left: 5%;
+	margin-right: 0%;
+}
+.tab-item, .icon, .tab-title{
+	color: #BABABA;
+	background: #000;
+	border-bottom: 0px;																																																																																																																																																																																																																													
+}
+.button.button-positive{
+	background: #317300;	
+}
+
+title, .title-center,.header-item>.icon,.ion-gear-a{
+	background: transparent;
+}
+
+.icon,.ion-volume-high{
+	background: transparent;
+}
+
+i.icon.ion-gear-a{
+	float: top;	
+}
+
+.item-complex, .item-radio .item-content {
+	background-color: transparent;
+	margin-right: -10%;
+}
+.item-content{
+	color: #FFF;
+	text-align: right;
+}
+.item-radio input:checked ~ .item-content {
+	color: #FFF1A9;
+	background: #3D606F; 
+	opacity: 0.50%;
+	margin-right: -10%;
+}
+
+.radio-icon, .ion-checkmark{
+	color: #000;
+	background: transparent; 
+}
+
+.titpopover{
+ font-family: fontgodoy;
+ color :#FFF;
+ text-align: right;
+ margin-right: 10%;
+}
+
+.controlAdd{
+	margin-left: 60%;
+}
+
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+    background: transparent;
+    border-color: transparent;
+}
+.checkbox input:before, .checkbox-icon:before {
+	background: transparent;
+	border-color: transparent;
+}
+
+
+
+/*---Posponer---*/
+#posponer{
+	background: url(../img/verde.png)no-repeat; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-size: 100% 100%;
+}
+
+.menu-posponer {
+	margin-left: 80%;
+	text-align: center;
+	color: #FFF;
+	font-size: 100%;
+}
+
+.title-posponer{
+	text-align: center;
+	position: relative;
+	color: #FFF;
+	font-size: 250%;
+}
+
+
+#reproducir{
+	position: absolute;
+	margin-left: 40%;
+	width: 20%;
+}
+
+
+#postergar{
+	position: absolute;
+	margin-right: 0%;
+	width: 20%;
+}
+#reproducir img{
+	width: 250%;
+	margin-left: 50%;
+}	
+
+#reproducir > button{
+	background-color: transparent;
+}
+
+#postergar img{
+	width: 250%;
+	margin-right: 150%;
+}	
+
+.circle{
+	border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+	background-color:#000000;
+	background-color: rgb(0, 0, 0);    
+    border: 2px solid #000;
+    color: #FFF;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.circle:hover { 
+    background-color: #303030;
+    border: 2px solid #303030;
+}
+
+.circle2{
+	border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+	background-color:#000000;
+	background-color: rgb(0, 0, 0);    
+	opacity: 0.87%;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    font: 20px Arial, sans-serif;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.activate{
+	border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+	background-color:#000000;
+	background-color: rgb(0, 0, 0);    
+	opacity: 0.87%;
+    border: 2px solid #000;
+    color: #FFF;
+    text-align: center;
+    font: 20px Arial, sans-serif;
+}
+
+.desact{
+	border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+	background-color:#FFF;
+	opacity: 0.87%;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+
+
+/*---modal set hour */
+.pane{
+	background: transparent;
+}
+
+.modal{
+	position: absolute;
+	background: url(../img/verde.png)no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.modal2{
+	position: relative;
+}
+
+.ion-backspace{
+	font-size: 200%;
+	color: #000;
+}
+
+.modal input{
+	background: transparent;
+}
+
+.controlModal{
+	color: #FFF;
+}
+
+.radio-icon,.ion-checkmark,.ion-close-round{
+	color: #FFF;
+}
+
+.tab-nav.tabs>.modal{
+	margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.bombardero{
+	position: relative;
+	opacity: 0.5%;
+}
+
+.modal input {
+    background: transparent;
+    font-size: 20px;
+    height: 30px;
+	width: 80px;
+}
+
+
+
+
+
