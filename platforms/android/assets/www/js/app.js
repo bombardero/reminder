@@ -8,12 +8,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova','ui.router
 
 .run(function($ionicPlatform,$timeout, $state, $cordovaMedia, $cordovaSQLite) {
   $ionicPlatform.ready(function() {
-
-      //var db = $cordovaSQLite.openDB({ name: "my.db" });
-
-      // for opening a background db:
-      //var db = $cordovaSQLite.openDB({ name: "my.db", bgType: 1 });
-
+      //logica de local notificacion
       var d = new Date();
       d.setHours(22,30,00);
 
@@ -63,7 +58,9 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova','ui.router
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+
+  $ionicConfigProvider.tabs.position('bottom');
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router

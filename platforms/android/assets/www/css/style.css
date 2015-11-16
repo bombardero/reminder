@@ -12,8 +12,8 @@ div {
     font-family: 'fontgodoy';
 } 
 
-.fondo1{
-	background: url(../img/naranja.png)no-repeat; 
+#fondo0{
+	background: url(../img/verde.png)no-repeat; 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -21,7 +21,16 @@ div {
 	background-size: 100% 100%;
 	filter: blur(6px);
 }
-.fondo2{
+#fondo1{
+	background: url(../img/naranja.png)no-repeat; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-size: 100% 100%;
+}
+
+#fondo2{
 	background: url(../img/azul.png)no-repeat; 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -46,7 +55,7 @@ div {
   	-o-background-size: cover;
   	background-size: cover;
   	background-size: 100% 100%;
-}	
+}
 
 .item {
 	border: 0px; 
@@ -65,7 +74,7 @@ div {
 	-moz-box-shadow: -2px 1px 28px 0px rgba(0,0,0,0.75);
 	box-shadow: -2px 1px 28px 0px rgba(0,0,0,0.75);
 }
-
+	
 a.item:hover, a.item:focus {
   color: #000;
 }

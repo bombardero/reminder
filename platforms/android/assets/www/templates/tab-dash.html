@@ -1,24 +1,12 @@
-<!--<ion-view ng-style="{'background-color': 'red'}">-->
-<!--<ion-view ng-style='{"background":"url(../img/verde.png)no-repeat",
-                        "-webkit-background-size": "cover",
-                        "-moz-background-size": "cover",
-                        "-o-background-size": "cover",
-                        "background-size": "cover",
-                        "background-size": "100% 100%"}'>-->
-<ion-view ng-style="{ 'background-image': 'url(' + tema.miTema + ')', 
-                      '-webkit-background-size': 'cover',
-                      '-o-background-size': 'cover',
-                      'background-size': 'cover',
-                      'background-size': '100% 100%'
-                    }">
+<ion-view id='{{tema.miTema}}'>
     <ion-nav-title>
         {{datos.getDate()() | date: 'EEEE, d MMMM, y'}}
         <a class='item-icon-right'>
             <i  ng-click='openPopover($event)' class='icon ion-gear-a'></i>
         </a>
     </ion-nav-title>
-    <ion-content>  
-      
+    <ion-content>
+        <!--<input ng-model="tema.miTema">-->
     </ion-content>
 </ion-view>
 <script id="my-modal.html" type="text/ng-template">
