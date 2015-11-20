@@ -6,104 +6,76 @@
         </a>
     </ion-nav-title>
     <ion-content>
-        <!--<input ng-model="tema.miTema">-->
     </ion-content>
 </ion-view>
 <script id="my-modal.html" type="text/ng-template">
-<ion-modal-view>
-  <ion-content><br/><br/>
-    <div class="bombardero">
+<ion-modal-view id='{{tema.miTema}}'>
+  <ion-content><br/>
+  <div style="margin-left: 13%; margin-bottom:-3%;">
+    <div class="row">
+         <span class="radio-icon ion-close-round" style="padding:0px 20px 0px 20px; font-size: 140%;" ng-click="closeModal()"> Cancel</span>
+         <p class="controlModal" style="padding:0px 20px 0px 20px; font-size: 140%;">.</p>
+         <i ng-click="closeModal()" class="radio-icon ion-checkmark" style="padding:0px 20px 0px 20px; font-size: 140%;"> Listo</i> 
+    </div>
+  </div>
+  <hr>
+  <div style="">
       <div class="row">
-            <div class="col col-30" style="text-align: right; margin-right: -50px;">
-                <div>
-                     <p ng-click="closeModal()" class="controlModal"><span class="radio-icon ion-close-round"></span> Cancel</p>
-                </div>
-            </div>
-            <div class="col col-30" style="text-align: center;">
-                <div>
-                    <p class="controlModal">.</p>
-                </div>
-            </div>
-            <div class="col col-30" style="text-align: left;">
-              <div>
-                <p ng-click="closeModal()" class="controlModal"><i ng-click="closeModal()" class="radio-icon ion-checkmark"></i> Listo</p>
-              </div>
-            </div>
-      </div>
-      <div class="row">
-        <hr style="width: 100%; color: #000000; height: 0.5px;" />
-      </div>
-      <div class="row">
-          <div class="col col-20">
-            <div></div>
+          <div class="col col-25 col-offset-25" style="margin-left: 14%;">
+               <input type="text" style="font-size: 28px;" ng-model="expression" placeholder="--:--" ui-time-mask/>
           </div>
-          <div class="col col-20 col-offset-10">
-            <input class="inputhour" type="text" ng-model="expression" placeholder=" --:-- " ui-time-mask/>
+          <div class="col col-25">
           </div>
-          <div class="col col-20">
-              <div></div>
-          </div>
-          <div class="col col-20">
-                 <i style="opacity: 0.5; filter: alpha(opacity=50); " ng-click="add('b')" class='icon ion-backspace'></i>
+          <div class="col col-25" style="text-aling: left;">
+              <i style="opacity: 0.7;" ng-click="add('b')" class='icon ion-backspace'></i>
           </div>
       </div>
       <div class="row">
-                <div class="col col-20">
-                    <div></div>
-                </div>
-                <div class="col col-20 col-offset-10">
-                  <div class="circle" href="" ng-click="add(1)">1</div>
-                </div>
-                <div class="col col-20">
-                  <div class="circle" ng-click="add(2)">2</div>
-                </div>
-                <div class="col col-20">
-                  <div class="circle" ng-click="add(3)">3</div>
-                </div>
+          <div class="col col-25 col-offset-25">
+              <button type="button" ng-disabled="isDisabled1" class="{{classNumber1}}" ng-click="add(1)"><i class="glyphicon glyphicon-ok">1</i></button>
+          </div>
+          <div class="col col-25">
+              <button type="button" ng-disabled="isDisabled2" class="{{classNumber2}}"  ng-click="add(2)"><i class="glyphicon glyphicon-ok">2</i></button>
+          </div>
+          <div class="col col-25">
+              <button type="button" ng-disabled="isDisabled3" class="{{classNumber3}}"  ng-click="add(3)"><i class="glyphicon glyphicon-ok">3</i></button>
+          </div>
+          
       </div>
       <div class="row">
-              <div class="col col-20">
-                    <div></div>
-              </div>
-              <div class="col col-20 col-offset-10">
-                <div class="circle" ng-click="add(4)">4</div>
-              </div>
-              <div class="col col-20">
-                <div class="circle" ng-click="add(5)">5</div>
-              </div>
-              <div class="col col-20">
-                <div class="circle {{expression2}}" ng-click="add(6)">6</div>
-              </div>
+          <div class="col col-25 col-offset-25">
+             <button type="button" ng-disabled="isDisabled4" class="{{classNumber4}}" ng-click="add(4)"><i class="glyphicon glyphicon-ok">4</i></button>
+          </div>
+          <div class="col col-25">
+              <button type="button" ng-disabled="isDisabled5" class="{{classNumber5}}" ng-click="add(5)"><i class="glyphicon glyphicon-ok">5</i></button>
+          </div>
+          <div class="col col-25">
+              <button type="button" ng-disabled="isDisabled6" class="{{classNumber6}}" ng-click="add(6)"><i class="glyphicon glyphicon-ok">6</i></button>
+          </div>
+         
       </div>
       <div class="row">
-              <div class="col col-20">
-                    <div></div>
-              </div>
-              <div class="col col-20 col-offset-10">
-                <div class="circle {{expression2}}" ng-click="add(7)">7</div>
-              </div>
-              <div class="col col-20">
-                <div class="circle {{expression2}}" ng-click="add(8)">8</div>
-              </div>
-              <div class="col col-20">
-                <div class="circle {{expression2}}" ng-click="add(9)">9</div>
-              </div>
+          <div class="col col-25 col-offset-25">
+              <button type="button" ng-disabled="isDisabled7" class="{{classNumber7}}" ng-click="add(7)"><i class="glyphicon glyphicon-ok">7</i></button>
+          </div>
+          <div class="col col-25">
+              <button type="button" ng-disabled="isDisabled8" class="{{classNumber8}}"  ng-click="add(8)"><i class="glyphicon glyphicon-ok">8</i></button>
+          </div>
+          <div class="col col-25">
+              <button type="button" ng-disabled="isDisabled9" class="{{classNumber9}}"  ng-click="add(9)"><i class="glyphicon glyphicon-ok">9</i></button>
+          </div>
+          
       </div>
       <div class="row">
-            <div class="col col-20">
-                    <div></div>
-            </div>
-            <div class="col col-20 col-offset-10">
-              <div class="circle2 {{expression3}}" ng-click="add('r')">:00</div>
-            </div>
-            <div class="col col-20">
-               <div class="circle" ng-click="add(00)">0</div>
-            </div>
-            <div class="col col-20">
-               <div class="circle2 {{expression3}}" ng-click="add('m')">:30</div>
-            </div>
+          <div class="col col-25 col-offset-25">
+          </div>
+          <div class="col col-25">
+             <button type="button" ng-disabled="isDisabled0" class="{{classNumber0}}"  ng-click="add(0)"><i class="glyphicon glyphicon-ok">0</i></button>
+          </div>
+          <div class="col col-25">  
+          </div>
       </div>
-    </div><br/><br/>
+  </div>
     </ion-content>
 </ion-modal-view>
 

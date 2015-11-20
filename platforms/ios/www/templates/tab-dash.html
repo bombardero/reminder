@@ -1,30 +1,86 @@
-<!--<ion-view ng-style="{'background-color': 'red'}">-->
-<!--<ion-view ng-style='{"background":"url(../img/verde.png)no-repeat",
-                        "-webkit-background-size": "cover",
-                        "-moz-background-size": "cover",
-                        "-o-background-size": "cover",
-                        "background-size": "cover",
-                        "background-size": "100% 100%"}'>-->
-<ion-view ng-style="{ 'background-image': 'url(' + tema.miTema + ')', 
-                      '-webkit-background-size': 'cover',
-                      '-o-background-size': 'cover',
-                      'background-size': 'cover',
-                      'background-size': '100% 100%'
-                    }">
+<ion-view id='{{tema.miTema}}'>
     <ion-nav-title>
         {{datos.getDate()() | date: 'EEEE, d MMMM, y'}}
         <a class='item-icon-right'>
             <i  ng-click='openPopover($event)' class='icon ion-gear-a'></i>
         </a>
     </ion-nav-title>
-    <ion-content>  
-      
+    <ion-content>
     </ion-content>
 </ion-view>
 <script id="my-modal.html" type="text/ng-template">
 <ion-modal-view>
-  <ion-content><br/><br/>
-    <div class="bombardero">
+  <ion-content id='{{tema.miTema}}'><br/><br/>
+  <style>.classWithPad { margin:20px; padding:10px; }
+          .classWithPad2 { margin:20px; padding:0px; }
+  </style>  
+  <div style="width: 60%;
+              margin: 0 auto;">
+      <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+              <div class="classWithPad">
+                <i class="radio-icon ion-close-round"></i><p ng-click="closeModal()" class="controlModal">Listo</p>
+              </div>
+          </div>
+          <div class="col-md-4 col-md-offset-4">
+            <div class="classWithPad2"><p class="controlModal">.</p></div>
+          </div>
+          <div class="col-md-4 col-md-offset-4">
+            <div class="classWithPad">
+                <i ng-click="closeModal()" class="radio-icon ion-checkmark"></i> <p ng-click="closeModal()" class="controlModal">Cancel</span>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="text-center col-md-6">
+            <div class="classWithPad">
+                <input class="inputhour" type="text" ng-model="expression" placeholder=" --:-- " ui-time-mask/>
+            </div>
+          </div>
+          <div class="text-center col-md-6">
+            <div class="classWithPad"></div>
+          </div>
+          <div class="text-center col-md-6">
+            <div class="classWithPad">
+              <i style="opacity: 0.5; filter: alpha(opacity=50); " ng-click="add('b')" class='icon ion-backspace'></i>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(1)">1</div></div>
+          </div>
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(2)">2</div></div>
+          </div>
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(3)">3</div></div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(4)">4</div></div>
+          </div>
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(5)">5</div></div>
+          </div>
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(6)">6</div></div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(7)">7</div></div>
+          </div>
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(8)">8</div></div>
+          </div>
+          <div class="text-center col-md-6">
+            <div class="classWithPad"><div class="circle" href="" ng-click="add(9)">9</div></div>
+          </div>
+      </div>
+  </div>
+<!--<div class="bombardero">
       <div class="row">
             <div class="col col-30" style="text-align: right; margin-right: -50px;">
                 <div>
@@ -115,7 +171,7 @@
                <div class="circle2 {{expression3}}" ng-click="add('m')">:30</div>
             </div>
       </div>
-    </div><br/><br/>
+    </div><br/><br/>-->
     </ion-content>
 </ion-modal-view>
 

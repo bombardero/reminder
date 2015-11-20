@@ -1,9 +1,4 @@
-<ion-view ng-style="{ 'background-image': 'url(' + tema.miTema + ')', 
-                      '-webkit-background-size': 'cover',
-                      '-o-background-size': 'cover',
-                      'background-size': 'cover',
-                      'background-size': '100% 100%'
-                    }">
+<ion-view id='{{tema.miTema}}'>
   <ion-nav-title>
     {{datos.getDate()() | date: 'EEEE, d MMMM, y'}}
         <a class='item-icon-right'>
@@ -12,12 +7,13 @@
     </ion-nav-title>
     <ion-content>
         <button ng-click="openModal()">abrir modal</button>
+        <!--<input ng-model="tema.miTema">-->
     </ion-content>
 </ion-view>
 
 <script id="modal-posponer.html" type="text/ng-template">
- <ion-modal-view>
-  <ion-content id="posponer">
+ <ion-modal-view >
+  <ion-content id="posponer"  ng-style="data.style">
     <h2 class="menu-posponer" ><a ng-href ng-click="closeModal()">X <br/>Cancelar</a></h2>
     <div class="control-posponer">        
           <h3 class="title-posponer">REMINDER</h3><br/><br/><br/>

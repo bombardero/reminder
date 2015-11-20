@@ -1,6 +1,11 @@
     <br/><br/><br/>  
     <h2 class="menu-posponer" ><a ng-href ng-click="closeModal()">X <br/>Cancelar</a></h2>
-    <div class="control-posponer">        
+    <div class="control-posponer" ng-style="{ 'background-image': 'url(' + tema.miTema + ')', 
+                      '-webkit-background-size': 'cover',
+                      '-o-background-size': 'cover',
+                      'background-size': 'cover',
+                      'background-size': '100% 100%'
+                    }">        
           <h3 class="title-posponer">REMINDER</h3><br/><br/><br/>
                 <div id="reproducir">
                   <img on-swipe-left="play('file:///android_asset/www/alarmas/tono1.mp3')" src="img/reproducir.png">
