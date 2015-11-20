@@ -2,15 +2,14 @@
 /*Fondo de la actividad*/
 
 @font-face {
-font-family:'fontgodoy';
-src: url(../font/avenir.ttf) format("truetype");
- 	font-weight: normal;
-    font-style: normal;
+ font-family: 'myFont';
+ src: url("../fonts/avenir2.ttf");
 }
 
 div {
-    font-family: 'fontgodoy';
+    font-family: 'myFont' !important;
 } 
+
 
 #fondo0{
 	background: url(../img/verde.png)no-repeat; 
@@ -126,8 +125,10 @@ i.icon.ion-gear-a{
 	background-color: transparent;
 	margin-right: -10%;
 }
+
+/*color item in menu*/
 .item-content{
-	color: #FFF;
+	color: #98A647;
 	text-align: right;
 }
 .item-radio input:checked ~ .item-content {
@@ -143,10 +144,11 @@ i.icon.ion-gear-a{
 }
 
 .titpopover{
- font-family: fontgodoy;
+ font-family: myFont;
  color :#FFF;
  text-align: right;
- margin-right: 10%;
+ margin-right: 5%;
+ font-size: 100%;
 }
 
 .controlAdd{
@@ -165,6 +167,13 @@ i.icon.ion-gear-a{
 
 
 /*---Posponer---*/
+
+.ion-backspace{
+  color: #000;
+}
+
+
+
 #posponer{
 	background: url(../img/verde.png)no-repeat; 
   	-webkit-background-size: cover;
@@ -398,9 +407,6 @@ i.icon.ion-gear-a{
 .col-offset-25 {
   margin-left: 10%;
 }
-
-
-
 
 
 

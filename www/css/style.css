@@ -125,8 +125,10 @@ i.icon.ion-gear-a{
 	background-color: transparent;
 	margin-right: -10%;
 }
+
+/*color item in menu*/
 .item-content{
-	color: #FFF;
+	color: #98A647;
 	text-align: right;
 }
 .item-radio input:checked ~ .item-content {
@@ -145,7 +147,8 @@ i.icon.ion-gear-a{
  font-family: myFont;
  color :#FFF;
  text-align: right;
- margin-right: 10%;
+ margin-right: 5%;
+ font-size: 100%;
 }
 
 .controlAdd{
@@ -164,6 +167,13 @@ i.icon.ion-gear-a{
 
 
 /*---Posponer---*/
+
+.ion-backspace{
+  color: #000;
+}
+
+
+
 #posponer{
 	background: url(../img/verde.png)no-repeat; 
   	-webkit-background-size: cover;
@@ -397,9 +407,6 @@ i.icon.ion-gear-a{
 .col-offset-25 {
   margin-left: 10%;
 }
-
-
-
 
 
 

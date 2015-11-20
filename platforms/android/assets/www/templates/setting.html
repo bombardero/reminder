@@ -1,14 +1,14 @@
-<ion-popover-view class="fondoPopover">
+<ion-popover-view class="fondoPopover" style="margin-top: 5px;">
     <ion-content>
       <li class="item item-checkbox">
           <label class="checkbox">
             <input type="checkbox" name="vibracion" ng-model="settingVibracion.vibracion"  ng-click="vibrate()">
           </label>
           <div class="item-content">
-              Vibración
+              VIBRACION
           </div>
       </li>
-      <h1 class="titpopover">Temas</h1>
+      <h1 class="titpopover">TEMAS</h1>
      <hr>
       <div class="list">
         <li class="item item-checkbox">
@@ -16,15 +16,15 @@
                 <input type="checkbox"  name="tema0" ng-model="settingTema.tema0" ng-click="setTema('fondo0')" >
             </label>
             <div class="item-content"> 
-                Flora
+                FLORA
             </div>
         </li>
         <li class="item item-checkbox">
           <label class="checkbox">
-            <input type="checkbox"     name="tema1" ng-model="settingTema.tema1" ng-click="setTema('fondo1')" >
+            <input type="checkbox" name="tema1" ng-model="settingTema.tema1" ng-click="setTema('fondo1')" >
           </label>
           <div class="item-content">
-              Atardecer
+              ATARDECER
           </div>
         </li>
         <li class="item item-checkbox">
@@ -32,19 +32,19 @@
             <input type="checkbox"     name="tema2" ng-model="settingTema.tema2" ng-click="setTema('fondo2')">
           </label>
             <div class="item-content">
-              Cielo
+              CIELO
             </div>
         </li>
       </div>
       <div class="list">
-  		  <h1 class="titpopover">Sonido</h1>
+  		  <h1 class="titpopover">SONIDOS</h1>
         <hr>
         <li class="item item-checkbox">
           <label class="checkbox">
     	       <input type="checkbox" name="alarma0" ng-model="settingAlarma.alarma0" ng-click="play('/android_asset/www/alarmas/tono1.mp3')">
           </label>
     	       <div class="item-content">
-      		      Tono 1
+      		      AVES
       	     </div>
         </li>
         <li class="item item-checkbox">
@@ -52,7 +52,7 @@
       	     <input type="checkbox" name="alarma1" ng-model="settingAlarma.alarma1" ng-click="play('/android_asset/www/alarmas/tono2.mp3')" >
             </label>
     	    <div class="item-content">
-      		  Tono 2
+      		  RIOS
     	    </div>
         </li>
         <li class="item item-radio">

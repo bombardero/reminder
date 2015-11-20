@@ -10,7 +10,7 @@
 </ion-view>
 <script id="my-modal.html" type="text/ng-template">
 <ion-modal-view id='{{tema.miTema}}'>
-  <ion-content><br/>
+  <ion-content style="font-family: myFont;"><br/>
   <div style="margin-left: 13%; margin-bottom:-3%;">
     <div class="row">
          <span class="radio-icon ion-close-round" style="padding:0px 20px 0px 20px; font-size: 140%;" ng-click="closeModal()"> Cancel</span>
@@ -27,42 +27,42 @@
           <div class="col col-25">
           </div>
           <div class="col col-25" style="text-aling: left;">
-              <i style="opacity: 0.7;" ng-click="add('b')" class='icon ion-backspace'></i>
+              <i ng-click="add('b')" class='icon ion-backspace' style="color:#000; opacity: 0.5;"></i>
           </div>
       </div>
       <div class="row">
           <div class="col col-25 col-offset-25">
-              <button type="button" ng-disabled="isDisabled1" class="{{classNumber1}}" ng-click="add(1)"><i class="glyphicon glyphicon-ok">1</i></button>
+              <button type="button" ng-disabled="isDisabled1" class="{{classNumber1}}" ng-click="add(1)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">1</i></button>
           </div>
           <div class="col col-25">
-              <button type="button" ng-disabled="isDisabled2" class="{{classNumber2}}"  ng-click="add(2)"><i class="glyphicon glyphicon-ok">2</i></button>
+              <button type="button" ng-disabled="isDisabled2" class="{{classNumber2}}"  ng-click="add(2)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">2</i></button>
           </div>
           <div class="col col-25">
-              <button type="button" ng-disabled="isDisabled3" class="{{classNumber3}}"  ng-click="add(3)"><i class="glyphicon glyphicon-ok">3</i></button>
+              <button type="button" ng-disabled="isDisabled3" class="{{classNumber3}}"  ng-click="add(3)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">3</i></button>
           </div>
           
       </div>
       <div class="row">
           <div class="col col-25 col-offset-25">
-             <button type="button" ng-disabled="isDisabled4" class="{{classNumber4}}" ng-click="add(4)"><i class="glyphicon glyphicon-ok">4</i></button>
+             <button type="button" ng-disabled="isDisabled4" class="{{classNumber4}}" ng-click="add(4)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">4</i></button>
           </div>
           <div class="col col-25">
-              <button type="button" ng-disabled="isDisabled5" class="{{classNumber5}}" ng-click="add(5)"><i class="glyphicon glyphicon-ok">5</i></button>
+              <button type="button" ng-disabled="isDisabled5" class="{{classNumber5}}" ng-click="add(5)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">5</i></button>
           </div>
           <div class="col col-25">
-              <button type="button" ng-disabled="isDisabled6" class="{{classNumber6}}" ng-click="add(6)"><i class="glyphicon glyphicon-ok">6</i></button>
+              <button type="button" ng-disabled="isDisabled6" class="{{classNumber6}}" ng-click="add(6)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">6</i></button>
           </div>
          
       </div>
       <div class="row">
           <div class="col col-25 col-offset-25">
-              <button type="button" ng-disabled="isDisabled7" class="{{classNumber7}}" ng-click="add(7)"><i class="glyphicon glyphicon-ok">7</i></button>
+              <button type="button" ng-disabled="isDisabled7" class="{{classNumber7}}" ng-click="add(7)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">7</i></button>
           </div>
           <div class="col col-25">
-              <button type="button" ng-disabled="isDisabled8" class="{{classNumber8}}"  ng-click="add(8)"><i class="glyphicon glyphicon-ok">8</i></button>
+              <button type="button" ng-disabled="isDisabled8" class="{{classNumber8}}"  ng-click="add(8)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">8</i></button>
           </div>
           <div class="col col-25">
-              <button type="button" ng-disabled="isDisabled9" class="{{classNumber9}}"  ng-click="add(9)"><i class="glyphicon glyphicon-ok">9</i></button>
+              <button type="button" ng-disabled="isDisabled9" class="{{classNumber9}}"  ng-click="add(9)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">9</i></button>
           </div>
           
       </div>
@@ -70,7 +70,7 @@
           <div class="col col-25 col-offset-25">
           </div>
           <div class="col col-25">
-             <button type="button" ng-disabled="isDisabled0" class="{{classNumber0}}"  ng-click="add(0)"><i class="glyphicon glyphicon-ok">0</i></button>
+             <button type="button" ng-disabled="isDisabled0" class="{{classNumber0}}"  ng-click="add(0)"><i class="glyphicon glyphicon-ok" style="font-family: myFont;">0</i></button>
           </div>
           <div class="col col-25">  
           </div>
