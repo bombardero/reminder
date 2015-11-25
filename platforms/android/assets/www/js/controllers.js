@@ -447,10 +447,11 @@ angular.module('starter.controllers', ['ngCordova',])
           };        
     var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
     db.transaction(function(tx){ updateTema(tx, src) } , errorCB, successCB);
-      }
+
+  }
 })
 
-.controller('Posponer', function($scope, $ionicModal, $cordovaMedia, servtStilo, $cordovaSQLite) {
+.controller('Posponer', function($scope, $ionicModal, $cordovaMedia, servtStilo) {
     
     $scope.tema = servtStilo;
 

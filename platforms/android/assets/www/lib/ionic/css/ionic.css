@@ -3845,9 +3845,9 @@ ion-tabs.tabs-color-active-dark .tab-item {
 
 @media (min-width: 680px) {
   .modal {
-    top: 20%;
+    top: 10%;
     right: 20%;
-    bottom: 20%;
+    bottom: 10%;
     left: 20%;
     min-height: 240px;
     width: 60%; }

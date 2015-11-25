@@ -385,6 +385,9 @@ i.icon.ion-gear-a{
   opacity: 0.5;
   color: #FFF;
   border: 0px;
+  -webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.75);
 }
 
 .btn-circle.desact{
@@ -398,16 +401,10 @@ i.icon.ion-gear-a{
   opacity: 0.2;
   color: #FFF;
   border: 0px;
+  -webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.75);
 }
-
-.col {
-  padding: 20px;
-}
-
-.col-offset-25 {
-  margin-left: 10%;
-}
-
 
 
 .icon, .ion-volume-high {
@@ -415,6 +412,109 @@ i.icon.ion-gear-a{
     color: #FFF;
 
 }
+
+@media(min-width : 323px) and (max-width: 480px) {
+
+    #headKeyboard{
+        margin-left: 13%; 
+        margin-bottom:-3%;
+    }
+    #inputKey{
+       margin-left: 14%;
+    }
+
+    #iconKeyboard{
+      padding:0px 20px 0px 20px; font-size: 140%;
+    }
+
+    #inputNumber{
+      font-size: 50px; 
+      background: transparent;
+      width:130px;
+      height:75px;
+      margin: auto;
+    }
+
+    .col {
+        padding: 15px;
+    }
+
+    .col-offset-25 {
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 660px) { 
+
+    #headKeyboard{
+        margin-left: 20%; 
+        margin-bottom:-1%;
+    }
+    #inputKey{
+       margin-left: 14%;
+    }
+
+    #iconKeyboard{
+      padding:0px 20px 0px 20px; font-size: 140%;
+    }
+
+    #inputNumber{
+      font-size: 50px; 
+      background: transparent;
+      width:130px;
+      height:75px;
+      margin: auto;
+    }
+
+    .col {
+        padding: 15px;
+    }
+
+    .col-offset-25 {
+        margin-left: 10%;
+    }
+ }
+
+ @media (min-width: 661px) and (max-width: 1200px) { 
+
+    #headKeyboard{
+        margin-left: 25%; 
+        margin-bottom:-1%;
+    }
+    #inputKey{
+       margin-left: 14%;
+    }
+
+    #iconKeyboard{
+      padding:0px 20px 0px 20px; font-size: 140%;
+    }
+
+    #inputNumber{
+      font-size: 50px; 
+      background: transparent;
+      width:130px;
+      height:75px;
+      margin: auto;
+    }
+
+    .col {
+        padding: 15px;
+    }
+
+    .col-offset-25 {
+        margin-left: 10%;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
 
 
 
